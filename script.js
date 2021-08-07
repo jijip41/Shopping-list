@@ -12,7 +12,9 @@ function addList(e) {
   const template = document.querySelector('#list__template');
   const domFrag = template.content.cloneNode(true);
 
-  domFrag.querySelector('li').textContent = new_item.toUpperCase();
+  domFrag.querySelector('.item__name').textContent = new_item.toUpperCase();
+  domFrag.querySelector('.item__bin').innerHTML =
+    '<i class="far fa-trash-alt"></i>';
   ul.append(domFrag);
   text.value = 'Type..';
   text.focus();
