@@ -3,6 +3,7 @@
   --main-color: rgb(179, 144, 144);
   --purple-color: rgb(155, 150, 184);
   --light-purple-color: rgb(211, 211, 231);
+  --red-color: rgb(231, 80, 80);
   --title-font-family: 'Bebas Neue', cursive;
   --main-font-family: 'PT Sans', sans-serif;
 }
@@ -35,12 +36,38 @@ main {
   font-family: var(--main-font-family);
 }
 
+.list__body {
+  overflow: scroll;
+}
+
 .list__top {
   text-align: center;
   background-color: var(--main-color);
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
   font-size: 1.2rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.list__body--item {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+
+.item__bin {
+  color: var(--red-color);
+  cursor: pointer;
+}
+
+.item__bin:hover {
+  transform: scale(1.2);
 }
 
 .list__bottom form {
