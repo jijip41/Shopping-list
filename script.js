@@ -20,8 +20,16 @@ function addList(e) {
     domFrag.querySelector('.item__bin').innerHTML =
       '<i class="far fa-trash-alt"></i>';
     ul.append(domFrag);
-    text.value = 'Type..';
+    text.value = '';
   }
+
+  const bin_btn = Array.from(document.querySelectorAll('.item__bin'));
+
+  bin_btn.forEach((e) =>
+    e.addEventListener('click', () => {
+      e.parentElement.remove();
+    })
+  );
 
   new_item = '';
   text.focus();
@@ -35,6 +43,10 @@ function emptyInput() {
 //function - when input has changed update input value
 function updateText() {
   new_item = text.value;
+}
+
+function removeList(e) {
+  e.parentNode.remmove();
 }
 
 text.addEventListener('click', emptyInput);
