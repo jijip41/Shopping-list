@@ -64,6 +64,7 @@ button {
 
 .list__bottom input:focus {
   outline: none;
+  border: solid 3px var(--main-color);
 }
 
 .list__bottom button {
