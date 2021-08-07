@@ -17,6 +17,7 @@ header {
   text-align: center;
   width: 60vw;
   box-shadow: 0 0 2px var(--purple-color), 0 0px 3px var(--light-purple-color);
+  opacity: 0.5;
 }
 
 head h1 {
@@ -70,6 +71,11 @@ button {
   border: solid 1px var(--main-color);
   width: 30px;
   height: 30px;
+}
+
+.list__bottom button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 footer {
