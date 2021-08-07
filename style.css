@@ -1,0 +1,166 @@
+:root {
+  --beige-color: rgb(226, 226, 225);
+  --main-color: rgb(179, 144, 144);
+  --purple-color: rgb(155, 150, 184);
+  --light-purple-color: rgb(211, 211, 231);
+  --title-font-family: 'Bebas Neue', cursive;
+  --main-font-family: 'PT Sans', sans-serif;
+}
+
+body {
+  background-color: var(--beige-color);
+}
+
+header {
+  font-family: var(--title-font-family);
+  margin: auto;
+  text-align: center;
+  width: 60vw;
+  box-shadow: 0 0 2px var(--purple-color), 0 0px 3px var(--light-purple-color);
+}
+
+head h1 {
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 2fr 12fr 2fr;
+  margin: auto;
+  width: 60vw;
+  height: 80vh;
+  border: solid 1px var(--main-color);
+  border-radius: 14px;
+  font-family: var(--main-font-family);
+}
+
+.list__top {
+  text-align: center;
+  background-color: var(--main-color);
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  font-size: 1.2rem;
+}
+
+.list__bottom form {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.list__bottom input,
+button {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.list__bottom input {
+  width: 80%;
+  border: solid 1px var(--main-color);
+}
+
+.list__bottom input:focus {
+  outline: none;
+}
+
+.list__bottom button {
+  border-radius: 50%;
+  border: solid 1px var(--main-color);
+  width: 30px;
+  height: 30px;
+}
+
+footer {
+  text-align: center;
+  font-family: var(--main-font-family);
+}
+
+/* body {
+  background-color: beige;
+}
+
+#app {
+  display: block;
+  width: 400px;
+  border-radius: 15px;
+  background-color: white;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  height: 40px;
+  color: white;
+  font-size: 20px;
+  background: linear-gradient(120deg, powderblue, pink);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: center;
+}
+
+#list{
+  height: 500px;
+  position: relative;
+  overflow: scroll;
+}
+
+.list {
+  padding: 0 40px 0 40px;
+  position: relative;
+  top: 10px;
+}
+
+.new-row {
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+}
+
+.delete-btn {
+border-style: none;
+background-color: white;
+}
+
+.delete-btn:hover {
+  color: red;
+  border-style: none;
+  cursor: pointer;
+  }
+  
+.delete-btn:focus {
+  outline: 0;
+  }
+
+
+
+.text {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.btn-section {
+  background: linear-gradient(120deg, powderblue, pink);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+.add-btn {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 2px black;
+}
+
+.add-btn:hover{
+  cursor: pointer;
+}
+.add-btn:focus {
+  outline:0;
+} */
